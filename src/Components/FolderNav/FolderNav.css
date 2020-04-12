@@ -1,0 +1,48 @@
+.Sidebar > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.Sidebar > ul > li {
+  display: contents;
+}
+
+.Sidebar a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  margin: 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.2em;
+  line-height: 3em;
+  max-width: 75%;
+  min-height: 3em;
+  font-family: sans-serif;
+  transition: all 0.1s ease-in-out;
+}
+
+.Sidebar a:hover {
+  background-color: #3669ec;
+}
+
+.Sidebar__selected {
+  background-color: #3669ec;
+  transform: scale(1.1);
+}
+
+.Sidebar__new {
+  margin-bottom: 16px;
+  border: 1px dotted black;
+  background-color: darkviolet;
+}
+
+.Sidebar__new:hover {
+  background-color: rgb(156, 24, 212);
+}

@@ -1,0 +1,33 @@
+.App {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    'header'
+    'nav'
+    'main';
+}
+
+.App__header {
+  grid-area: header;
+  justify-self: center;
+}
+
+.Main {
+  grid-area: main;
+  justify-self: center;
+}
+
+.Sidebar {
+  grid-area: nav;
+  justify-self: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .App {
+    grid-template-columns: minmax(100px, 300px) 1fr 1fr;
+    grid-template-areas:
+      'header newBtn ... '
+      'nav main main'
+      '... main main';
+  }
+}
